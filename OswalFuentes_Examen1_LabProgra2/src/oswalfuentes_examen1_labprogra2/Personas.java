@@ -18,7 +18,7 @@ public class Personas {
     public Personas() {
     }
 
-    public Personas(String nombre, int edad, int id, int id_boleto, int dinero, String departamento) {
+    public Personas(String nombre, int edad, int id, String departamento) {
         this.nombre = nombre;
         this.edad = edad;
         this.id = id;
@@ -77,7 +77,9 @@ public class Personas {
 
     @Override
     public String toString() {
-        return "Personas{" + "nombre=" + nombre + ", edad=" + edad + ", id=" + id + ", id_boleto=" + id_boleto + ", dinero=" + dinero + ", departamento=" + departamento + '}';
+        return "Personas{" + "nombre=" + nombre + ", edad=" + edad + ", id=" 
+                + id + ", id_boleto=" + id_boleto + ", dinero=" + dinero + ", "
+                + "departamento=" + departamento + '}';
     }
 
     

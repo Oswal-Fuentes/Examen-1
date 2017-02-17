@@ -12,12 +12,12 @@ package oswalfuentes_examen1_labprogra2;
 public class Estudiantes extends Personas {
 
     private String carrera;
-    
+
     public Estudiantes() {
     }
 
-    public Estudiantes(String carrera, String nombre, int edad, int id, int id_boleto, int dinero, String departamento) {
-        super(nombre, edad, id, id_boleto, dinero, departamento);
+    public Estudiantes(String carrera, String nombre, int edad, int id, String departamento) {
+        super(nombre, edad, id, departamento);
         this.carrera = carrera;
     }
 
@@ -79,9 +79,8 @@ public class Estudiantes extends Personas {
 
     @Override
     public String toString() {
-        return "Estudiantes{" + "carrera=" + carrera + '}';
+        return "Estudiante - " + " Nombre: " + nombre + "    Edad: " + edad
+                + "    ID: " + id + "    ID Boleto: " + id_boleto + "    Dinero: "
+                + dinero + "    Departamento: " + departamento;
     }
-
-    
-    
 }

@@ -9,15 +9,15 @@ package oswalfuentes_examen1_labprogra2;
  *
  * @author Oswal
  */
-public class Empleados extends Personas{
-    
+public class Empleados extends Personas {
+
     private String empleo;
 
     public Empleados() {
     }
 
-    public Empleados(String empleo, String nombre, int edad, int id, int id_boleto, int dinero, String departamento) {
-        super(nombre, edad, id, id_boleto, dinero, departamento);
+    public Empleados(String empleo, String nombre, int edad, int id, String departamento) {
+        super(nombre, edad, id, departamento);
         this.empleo = empleo;
     }
 
@@ -79,6 +79,8 @@ public class Empleados extends Personas{
 
     @Override
     public String toString() {
-        return "Empleados{" + "empleo=" + empleo + '}';
+        return "Empleado - " + " Nombre: " + nombre + "    Edad: " + edad
+                + "    ID: " + id + "    ID Boleto: " + id_boleto + "    Dinero: "
+                + dinero + "    Departamento: " + departamento;
     }
 }

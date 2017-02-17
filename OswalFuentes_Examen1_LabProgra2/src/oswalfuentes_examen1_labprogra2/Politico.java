@@ -16,8 +16,8 @@ public class Politico extends Personas {
     public Politico() {
     }
 
-    public Politico(String afiliacion, String nombre, int edad, int id, int id_boleto, int dinero, String departamento) {
-        super(nombre, edad, id, id_boleto, dinero, departamento);
+    public Politico(String afiliacion, String nombre, int edad, int id, String departamento) {
+        super(nombre, edad, id, departamento);
         this.afiliacion = afiliacion;
     }
 
@@ -79,6 +79,8 @@ public class Politico extends Personas {
 
     @Override
     public String toString() {
-        return "Politico{" + "afiliacion=" + afiliacion + '}';
+        return "Politico - " + " Nombre: " + nombre + "    Edad: " + edad
+                + "    ID: " + id + "    ID Boleto: " + id_boleto + "    Dinero: "
+                + dinero + "    Departamento: " + departamento;
     }
 }
